@@ -115,7 +115,7 @@ header .container {
     color: var(--link-color);
 }
 
-.list-item {
+.link {
     position: relative;
 }
 
