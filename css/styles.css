@@ -235,6 +235,7 @@ header .container {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -396,6 +397,7 @@ header .container {
     display: flex;
     align-items: center;
     fill: var(--social-network-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-networks:hover,
@@ -429,6 +431,7 @@ header .container {
     width: 106px;
     height: 60px;
     fill: var(--social-network-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-company {
@@ -453,6 +456,7 @@ header .container {
     height: 100%;
     border: 1px solid var(--social-network-color);
     border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-company:hover .client-icon,
@@ -622,6 +626,7 @@ header .container {
     display: flex;
     align-items: center;
     fill: var(--link-address-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-networks-footer:hover,
