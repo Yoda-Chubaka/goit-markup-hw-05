@@ -482,6 +482,7 @@ header .container {
     padding-bottom: 6px;
     padding-left: 22px;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-item:not(:last-child) {
@@ -509,6 +510,7 @@ header .container {
 
 .link-project {
     display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-project:hover,
@@ -689,7 +691,7 @@ header .container {
     cursor: pointer;
 }
 
-/* Section "Our work" positioning*/
+/* START Section "Our work" positioning*/
 
 .work-thumb:hover,
 .work-thumb:focus .our-work-name {
@@ -732,5 +734,37 @@ header .container {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-background-color);
+}
+
+/* END Section "Our work" positioning*/
+
+/* START Section "Our projects" positioning*/
+
+.link-project:hover,
+.link-project:focus .image-project {
+    opacity: 1;
+}
+
+.image-project:hover::after {
+    opacity: 1;
+}
+
+.image-project {
+    position: relative;
+
+}
+
+.image-project::after {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
 }
 
