@@ -716,24 +716,6 @@ header .container {
     background-color: rgba(47, 48, 58, 0.8);
 }
 
-/* .product-thumb::after {
-    display: inline-block;
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    background-color: rgba(47, 48, 58, 0.8);
-    opacity: 1;
-}
-
-.product-actions {
-    position: relative;
-} */
-
-
-
 /* END Section "Our work" positioning*/
 
 /* START Section "Our projects" positioning*/
