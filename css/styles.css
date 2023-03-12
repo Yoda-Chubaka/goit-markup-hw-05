@@ -693,13 +693,19 @@ header .container {
 
 /* START Section "Our work" positioning*/
 
+.product-thumb {
+    position: relative;
+}
+
 .our-work-name {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    left: 0;
     display: flex;
-    opacity: 1;
+    justify-content: center;
+    align-items: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -707,13 +713,10 @@ header .container {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-background-color);
+    background-color: rgba(47, 48, 58, 0.8);
 }
 
-.product-thumb {
-    position: relative;
-}
-
-.product-thumb::after {
+/* .product-thumb::after {
     display: inline-block;
     content: "";
     position: absolute;
@@ -727,7 +730,7 @@ header .container {
 
 .product-actions {
     position: relative;
-}
+} */
 
 
 
