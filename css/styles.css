@@ -665,21 +665,23 @@ header .container {
     pointer-events: none;
 }
 
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.7);
+}
+
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
     width: 528px;
     height: 581px;
     background-color: var(--primary-background-color);
     border-radius: 4px;
-    transition: scale(1) 3500ms linear, opacity 3500ms linear;
+    transform: scale(1), opacity(1);
+    transition: transform 250ms linear, opacity 250ms linear;
 }
-
-/* .modal::after {
-    transition: scale(2);
-} */
 
 .modal-close-button {
     position: absolute;
