@@ -444,8 +444,9 @@ header .container {
 }
 
 .link-company:hover,
-.link-company:focus {
+.link-company:focus .clients-company {
     border: 1px solid var(--link-color);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-company {
@@ -673,7 +674,12 @@ header .container {
     height: 581px;
     background-color: var(--primary-background-color);
     border-radius: 4px;
+    transition: scale(1) 3500ms linear, opacity 3500ms linear;
 }
+
+/* .modal::after {
+    transition: scale(2);
+} */
 
 .modal-close-button {
     position: absolute;
