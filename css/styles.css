@@ -404,13 +404,15 @@ header .container {
 .link-networks:focus {
     fill: var(--primary-background-color);
     background-color: var(--link-color);
-}
+   }
 
 .social-networks {
     display: flex;
     width: 20px;
     height: 20px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .box-clients {
     justify-content: space-between;
@@ -643,6 +645,7 @@ header .container {
     width: 20px;
     height: 20px;
     fill: var(--primary-background-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* END footer */
